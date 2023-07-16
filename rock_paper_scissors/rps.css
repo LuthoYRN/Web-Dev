@@ -1,0 +1,198 @@
+body{
+  background-image: linear-gradient(to right,black,rgb(0, 98, 255));
+}
+.header{
+  margin-top: 20px;
+  font-family: Arial;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.options div{
+  width: 200px;
+  height: 200px;
+  border-color: white;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  transition: width 0.15s,background-color 0.15s,height 0.15s,border-color 0.15s;
+}
+.options div img{
+  width: 50%;
+}
+.score{
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+  color: white;
+}
+.result{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Arial;
+  text-align: center;
+  color: white;
+}
+.div-button{
+  margin-top: 30px;
+  text-align: center;
+}
+.div-button button{
+  padding: 15px 20px;
+  font-family: Arial;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border-style: none;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: opacity 0.15s, background-color 0.15s,border-style 0.15s,border-width 0.15s,border-color 0.15s;
+}
+.div-button button:hover{
+  background-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+.div-button button:active{
+  opacity: 0.65;
+}
+.options div:hover{
+  border-color: rgb(2, 168, 2);
+  width: 230px;
+  height: 230px;
+}
+.options div:active{
+  background-color: rgb(51, 50, 50);
+  border-color: white;
+  width: 200px;
+  height: 200px;
+}
+.moves{
+  text-align:center;
+  color: white;
+  margin-bottom: 40px;
+  font-family: Arial;
+  font-size: 18px;
+}
+.moves img{
+  width: 80px;
+}
+.rotation{
+  display: none;
+  background-color: transparent;
+  border-width: 16px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color:rgba(0, 0, 0, 0.15);
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+.is-loading{
+  display: block;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);
+  } 
+}
+@media (max-width:550px)  {
+  .header{
+    font-size: 22px;
+  }
+  .options div{
+    width: 80px;
+    height: 80px;
+  }
+  .result{
+    font-size: 28px;
+  }
+  .score{
+    font-size: 16px;
+  }
+  .moves{
+    font-size: 18px;
+  }
+  .moves img{
+    width: 40px;
+  }
+  .options div:hover{
+    width: 100px;
+    height: 100px;
+  }
+  .options div:active{
+    width: 80px;
+    height: 80px;
+  }
+  .div-button button{
+    font-size: 14px;
+  }
+  .is-loading{
+    background-color: transparent;
+    border-width: 12px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width:550px) and (max-width:740px)  {
+  .header{
+    font-size: 32px;
+  }
+  .options div{
+    width: 150px;
+    height: 150px;
+  }
+  .result{
+    font-size: 36px;
+  }
+  .score{
+    font-size: 18px;
+  }
+  .moves{
+    font-size: 24px;
+  }
+  .moves img{
+    width: 60px;
+  }
+  .options div:hover{
+    width: 170px;
+    height: 170px;
+  }
+  .options div:active{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1239px){
+  .options div{
+    margin: 0px 50px;
+  }
+}
+
+@media (min-width:1240px){
+  .options div{
+    margin: 0px 100px;
+  }
+}
