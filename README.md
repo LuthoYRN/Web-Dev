@@ -1,2 +1,2 @@
-# HTML-CSS
-HTML-CSS practice (first repository)
+# Web-dev
+Mini projects showing my web-dev progression. (currently learning)
